@@ -40,14 +40,15 @@ public partial class Login : System.Web.UI.Page
 
         if (rs.HasRows == true)
         {
-            Response.Write(@"<script>alert('로그인 성공');</script>");
+            // Response.Write(@"<script>alert('로그인 성공');</script>");
             // FormsAuthentication.SetAuthCookie(UserID, false);
             FormsAuthentication.RedirectFromLoginPage(u_id, false);
             Response.Redirect("Home.aspx");
         }
         else
         {
-            Response.Write(@"<script>alert('로그인 실패');</script>");
+            Response.Write(@"<script>alert('로그인 정보가 잘못되었거나 없는 유저입니다.');</script>");
+            // Response.Redirect(string.Format("NewUser.aspx"));
         }
 
         sc.Close();

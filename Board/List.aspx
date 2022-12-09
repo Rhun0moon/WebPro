@@ -11,55 +11,35 @@
     </table>
     <table class="tbl01" cellpadding="0" cellspacing="0">
         <tr><td width="5px"></td><td>
-            <!--  ConnectionStrings에 DB이름 넣어야됨 -->
-            <asp:SqlDataSource ID="dSource" runat="server" 
-                ConnectionString="<%$ ConnectionStrings:ASPNET %>" 
-                SelectCommand="SELECT [serial_no], [writer], [title], [ref_id], 
-                [inner_id], [depth], [read_count], [del_flag], [reg_date] 
-                FROM [board] ORDER BY [ref_id] DESC, [inner_id]">
+
+            <asp:SqlDataSource ID="dSource" runat="server" DataSourceMode="DataSet" 
+                ConnectionString="<%$ ConnectionStrings:weppoConnectionString %>" 
+                SelectCommand="SELECT [b_no], [b_id], [b_title], [ref_id], [ref_no], [ref_depth], [b_read], [b_flag], [b_regdate] FROM [board] ORDER BY [ref_id] DESC, [ref_no]">
             </asp:SqlDataSource>
-            <asp:GridView ID="gvList" runat="server" DataSourceID="dSource" 
-                AutoGenerateColumns="False" CellPadding="4" ForeColor="#333333" 
-                AllowPaging="True" GridLines="None" PagerSettings-Mode="NextPrevious">
+
+            <asp:GridView ID="gvList" runat="server" DataSourceID="dSource" AutoGenerateColumns="False" CellPadding="4" ForeColor="#333333" AllowPaging="True" GridLines="None" PagerSettings-Mode="NextPrevious" DataKeyNames="b_no">
                 <RowStyle BackColor="#EFF3FB" />
                 <AlternatingRowStyle BackColor="White" />
                 <HeaderStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
                 <PagerStyle BackColor="#FFFFFF" HorizontalAlign="Left" />
-                <PagerSettings 
-                    NextPageImageUrl="/WebEx/13/images/btn_next.gif"
-                    PreviousPageImageUrl="/WebEx/13/images/btn_prev.gif" />
+                <PagerSettings NextPageImageUrl="~/images/btn_next.gif" PreviousPageImageUrl="~/images/btn_prev.gif" />
                 <FooterStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
                 <EmptyDataTemplate>
                     등록된 게시물이 없습니다.
                 </EmptyDataTemplate>
                 <Columns>
-                    <asp:BoundField DataField="serial_no" HeaderText="번호">
-                        <HeaderStyle Width="60px" />
-                        <ItemStyle HorizontalAlign="Center" />
+                    <asp:BoundField DataField="b_no" HeaderText="b_no" InsertVisible="False" ReadOnly="True" SortExpression="b_no">
                     </asp:BoundField>
-                    <asp:TemplateField HeaderText="제목" HeaderStyle-Width="330px">
-                        <ItemTemplate>
-                            <%# ShowDepth((int)Eval("depth")) %>
-                            <%# ShowReplyIcon((int)Eval("inner_id")) %>
-                            <%# ShowTitle(
-                                Eval("serial_no").ToString(), Eval("title").ToString(),
-                                Eval("del_flag").ToString()) %>
-                        </ItemTemplate>
-                    </asp:TemplateField>
-                    <asp:BoundField DataField="writer" HeaderText="작성자">
-                        <HeaderStyle Width="70px" />
-                        <ItemStyle HorizontalAlign="Center" />
+                    <asp:BoundField DataField="b_id" HeaderText="b_id" SortExpression="b_id">
                     </asp:BoundField>
-                    <asp:TemplateField HeaderText="날짜" HeaderStyle-Width="70px">
-                        <ItemTemplate>
-                            <%# ShowDate((DateTime)Eval("reg_date")) %>
-                        </ItemTemplate>
-                        <ItemStyle HorizontalAlign="Center" />
-                    </asp:TemplateField>
-                    <asp:BoundField DataField="read_count" HeaderText="조회">
-                        <HeaderStyle Width="40px" />
-                        <ItemStyle HorizontalAlign="Center" />
+                    <asp:BoundField DataField="b_title" HeaderText="b_title" SortExpression="b_title">
                     </asp:BoundField>
+                    <asp:BoundField DataField="ref_id" HeaderText="ref_id" SortExpression="ref_id" />
+                    <asp:BoundField DataField="ref_no" HeaderText="ref_no" SortExpression="ref_no" />
+                    <asp:BoundField DataField="ref_depth" HeaderText="ref_depth" SortExpression="ref_depth" />
+                    <asp:BoundField DataField="b_read" HeaderText="b_read" SortExpression="b_read" />
+                    <asp:BoundField DataField="b_flag" HeaderText="b_flag" SortExpression="b_flag" />
+                    <asp:BoundField DataField="b_regdate" HeaderText="b_regdate" SortExpression="b_regdate" />
                 </Columns>
             </asp:GridView>
         </td></tr>

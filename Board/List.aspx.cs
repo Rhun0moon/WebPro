@@ -23,7 +23,7 @@ public partial class Board_List : System.Web.UI.Page
 
         if (innerId != 0)
         {
-            returnString += "<img src='/WebEx/13/images/reply_icon.gif' />";
+            returnString += "<img src='~/images/reply_icon.gif' />";
         }
         return returnString;
     }

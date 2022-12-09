@@ -39,6 +39,7 @@
                     </td>
                     <td class="auto-style2">
                         <asp:Label ID="Label4" runat="server" Text=" "></asp:Label>
+                        <br />
                         <asp:Label ID="Label3" runat="server" Text="Time Manager 소개<br />
                         <br />
                         Time Manager는 개인 일정표 생성 사이트입니다.<br />

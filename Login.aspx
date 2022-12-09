@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="Login.aspx.cs" Inherits="Login" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage2.master" AutoEventWireup="true" CodeFile="Login.aspx.cs" Inherits="Login" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
     <style type="text/css">
@@ -49,7 +49,7 @@
         </tr>
         <tr>
             <td>
-                &nbsp;</td>
+            </td>
             <td>
                 <br />
                 <asp:Button ID="Button8" runat="server" Text="로그인" OnClick="Button8_Click" CssClass="btn"  />

@@ -9,8 +9,7 @@ using System.Web.Configuration;
 public class DBConn
 {
     // 1. Database Connection 정보
-    string connectionString =
-        WebConfigurationManager.ConnectionStrings["weppo"].ConnectionString;
+    string connectionString = @"Data Source=DESKTOP-8RPAOC3;" + "Initial Catalog=weppo;" + "User ID=sa;Password=12341234";
     public SqlConnection dbConn;
 
     // 2. 생성자를 이용하여 생성과 동시에 데이터 접속

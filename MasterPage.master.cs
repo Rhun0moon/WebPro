@@ -4,6 +4,7 @@ using System.Web;
 using System.Linq;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Web.Security;
 
 public partial class MasterPage : System.Web.UI.MasterPage
 {
@@ -16,18 +17,6 @@ public partial class MasterPage : System.Web.UI.MasterPage
     {
         // 홈
         Response.Redirect(string.Format("Home.aspx"));
-    }
-
-    protected void Button2_Click(object sender, EventArgs e)
-    {
-        // 로그인
-        Response.Redirect(string.Format("Login.aspx"));
-    }
-
-    protected void Button8_Click(object sender, EventArgs e)
-    {
-        // 회원가입
-        Response.Redirect(string.Format("NewUser.aspx"));
     }
 
     protected void Button3_Click(object sender, EventArgs e)
@@ -46,5 +35,12 @@ public partial class MasterPage : System.Web.UI.MasterPage
     {
         // 회원정보 수정
         Response.Redirect(string.Format("EditUser.aspx"));
+    }
+
+    protected void Logout_Click(object sender, EventArgs e)
+    {
+        // 로그아웃
+        FormsAuthentication.SignOut();
+        Response.Redirect(string.Format("Login.aspx"));
     }
 }
