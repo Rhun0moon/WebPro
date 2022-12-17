@@ -1,9 +1,9 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="CheckPassword.aspx.cs" Inherits="Board_CheckPassword" %>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-    <table class="tbl01" cellpadding="0" cellspacing="0">
+    <table class="tbl01" cellpadding="0" cellspacing="0" width="1920px">
         <tr><td width="5px"></td><td class="td01"></td></tr>
-        <tr><td></td><td class="td03">
+        <tr><td width="100px"></td><td class="td03" width="500px">
             <img src="../images/title_icon.gif" />
             &nbsp;&nbsp;&nbsp;비밀번호 확인</td></tr>
         <tr><td></td><td class="td01"></td></tr>
@@ -14,7 +14,7 @@
         <tr><td></td><td height="15"></td></tr>
     </table>
     <table class="tbl01" cellpadding="0" cellspacing="0">
-            <tr><td width="5px"></td><td>
+            <tr><td width="300px"></td><td>
             <table class="tbl01" cellpadding="0" cellspacing="0">
                 <tr><td colspan="2" height="2"></td></tr>
                 <tr><td style="padding-left:20px; height:30px; width:100px">
@@ -36,7 +36,7 @@
     </td></tr></table>
     <table class="tbl01" cellpadding="0" cellspacing="0">
         <tr><td width="5px" height="15px"></td><td colspan="3"></td></tr>
-        <tr><td></td><td class="td06"></td><td align="left">
+        <tr><td width="600"></td><td class="td06"></td><td align="left">
                 <asp:ImageButton ID="btnEditOrDelete" runat="server" 
                     onclick="btnEditOrDelete_Click" />
             </td>

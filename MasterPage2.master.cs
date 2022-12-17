@@ -12,15 +12,15 @@ public partial class MasterPage2 : System.Web.UI.MasterPage
 
     }
 
-    protected void Button2_Click(object sender, EventArgs e)
+    protected void Login_Click(object sender, EventArgs e)
     {
         // 로그인
-        Response.Redirect(string.Format("Login.aspx?"));
+        Response.Redirect(string.Format("~/Login.aspx"));
     }
 
-    protected void Button8_Click(object sender, EventArgs e)
+    protected void NewUser_Click(object sender, EventArgs e)
     {
         // 회원가입
-        Response.Redirect(string.Format("NewUser.aspx?"));
+        Response.Redirect(string.Format("~/NewUser.aspx"));
     }
 }

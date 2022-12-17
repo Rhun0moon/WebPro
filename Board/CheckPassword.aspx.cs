@@ -26,8 +26,8 @@ public partial class Board_CheckPassword : System.Web.UI.Page
         string hashedPassword =
             FormsAuthentication.HashPasswordForStoringInConfigFile(txtPassword.Text, "sha1");
 
-        string selectString = "SELECT * FROM board WHERE serial_no=";
-        selectString += Request["sn"] + " AND password='" + hashedPassword + "'";
+        string selectString = "SELECT * FROM board WHERE b_no=";
+        selectString += Request["sn"] + " AND b_passwd='" + hashedPassword + "'";
 
         DBConn conn = new DBConn();
         SqlDataReader dr = conn.ExecuteReader(selectString);

@@ -1,16 +1,16 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="Write.aspx.cs" Inherits="Board_Write" %>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-    <table class="tbl01" cellpadding="0" cellspacing="0">
+    <table class="tbl01" cellpadding="0" cellspacing="0" width="1920px">
         <tr><td width="5px"></td><td class="td01"></td></tr>
-        <tr><td></td><td class="td03">
+        <tr><td width="100px"></td><td class="td03" width="500px">
             <img src="../images/title_icon.gif" />
             &nbsp;&nbsp;&nbsp;글 쓰 기</td></tr>
         <tr><td></td><td class="td01"></td></tr>
         <tr><td></td><td height="15"></td></tr>
     </table>
     <table class="tbl01" cellpadding="0" cellspacing="0">
-            <tr><td width="5px"></td><td>
+            <tr><td width="300px"></td><td>
             <table class="tbl01" cellpadding="0" cellspacing="0">
                 <tr><td colspan="2" class="td02"></td></tr>
                 <tr><td class="td05">·&nbsp;&nbsp;&nbsp;작성자</td>
@@ -48,10 +48,10 @@
                     <td class="td07">·&nbsp;&nbsp;&nbsp;내용</td>
                     <td class="p02">
                         <asp:TextBox ID="txtMessage" runat="server" Height="200px"
-                            TextMode="MultiLine" Width="400px" CssClass="p01"></asp:TextBox>
+                            TextMode="MultiLine" Width="1000px" CssClass="p01"></asp:TextBox>
                     </td>
                 </tr>
-                <tr><td colspan="2" class="td02">
+                <tr><td colspan="2" class="auto-style7">
                     <asp:ValidationSummary ID="vsWrite" runat="server"
                         ShowMessageBox="True" ShowSummary="False" />
                 </td></tr>
@@ -59,7 +59,7 @@
     </td></tr></table>
     <table class="tbl01" cellpadding="0" cellspacing="0">
         <tr><td width="5px" height="15px"></td><td colspan="3"></td></tr>
-        <tr><td></td><td class="td06"></td><td align="left">
+        <tr><td width="800"></td><td class="td06" width="500"></td><td align="left">
                 <asp:ImageButton ID="btnWrite" runat="server" onclick="btnWrite_Click" 
                     ImageUrl="~/images/btn_write.gif"/>
             </td>
@@ -70,4 +70,11 @@
             </td></tr>
         <tr><td height="10px"></td><td colspan="3"></td></tr>
     </table>
+</asp:Content>
+<asp:Content ID="Content3" runat="server" contentplaceholderid="head">
+    <style type="text/css">
+        .auto-style7 {
+            height: 51px;
+        }
+    </style>
 </asp:Content>

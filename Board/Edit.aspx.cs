@@ -12,16 +12,15 @@ public partial class Board_Edit : System.Web.UI.Page
     {
         if (!IsPostBack)
         {
-            string selectString = "SELECT * FROM board WHERE serial_no=" + Request["sn"];
+            string selectString = "SELECT * FROM board WHERE b_no=" + Request["sn"];
 
             DBConn conn = new DBConn();
             SqlDataReader dr = conn.ExecuteReader(selectString);
 
-            if (dr.Read())
-            {
-                txtWriter.Text = dr["writer"].ToString();
-                txtTitle.Text = dr["title"].ToString();
-                txtMessage.Text = dr["message"].ToString();
+            if (dr.Read()){
+                txtWriter.Text = dr["b_id"].ToString();
+                txtTitle.Text = dr["b_title"].ToString();
+                txtMessage.Text = dr["b_content"].ToString();
             }
 
             dr.Close();
@@ -31,16 +30,16 @@ public partial class Board_Edit : System.Web.UI.Page
 
     protected void btnEdit_Click(object sender, ImageClickEventArgs e)
     {
-        string updateString = "UPDATE board SET writer=@writer, ";
-        updateString += "title=@title, message=@message ";
-        updateString += "WHERE serial_no=" + Request["sn"];
+        string updateString = "UPDATE board SET b_id=@b_id, ";
+        updateString += "b_title=@b_title, b_content=@b_content ";
+        updateString += "WHERE b_no=" + Request["sn"];
 
         DBConn conn = new DBConn();
         SqlCommand cmd = new SqlCommand(updateString, conn.GetConn());
 
-        cmd.Parameters.AddWithValue("@writer", txtWriter.Text);
-        cmd.Parameters.AddWithValue("@title", txtTitle.Text);
-        cmd.Parameters.AddWithValue("@message", txtMessage.Text);
+        cmd.Parameters.AddWithValue("@b_id", txtWriter.Text);
+        cmd.Parameters.AddWithValue("@b_title", txtTitle.Text);
+        cmd.Parameters.AddWithValue("@b_content", txtMessage.Text);
 
         cmd.ExecuteNonQuery();
         

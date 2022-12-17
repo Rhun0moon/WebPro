@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="List.aspx.cs" Inherits="Board_List" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage_A.master" AutoEventWireup="true" CodeFile="List_Board_A.aspx.cs" Inherits="Admin_List_Board_A" %>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     <table class="tbl01" cellpadding="0" cellspacing="0">
@@ -31,13 +31,8 @@
                     </asp:BoundField>
                     <asp:BoundField DataField="b_id" HeaderText="b_id" SortExpression="b_id">
                     </asp:BoundField>
-                    <asp:TemplateField HeaderText="제목" HeaderStyle-Width="330px">
-                        <ItemTemplate>
-                            <%# ShowDepth((int)Eval("ref_depth")) %>
-                            <%# ShowReplyIcon((int)Eval("ref_no")) %>
-                            <%# ShowTitle(Eval("b_no").ToString(), Eval("b_title").ToString(), Eval("b_flag").ToString()) %>
-                        </ItemTemplate>
-                    </asp:TemplateField>
+                    <asp:BoundField DataField="b_title" HeaderText="b_title" SortExpression="b_title">
+                    </asp:BoundField>
                     <asp:BoundField DataField="ref_id" HeaderText="ref_id" SortExpression="ref_id" />
                     <asp:BoundField DataField="ref_no" HeaderText="ref_no" SortExpression="ref_no" />
                     <asp:BoundField DataField="ref_depth" HeaderText="ref_depth" SortExpression="ref_depth" />
@@ -47,17 +42,6 @@
                 </Columns>
             </asp:GridView>
         </td></tr>
-    </table>
-    <table class="tbl01" cellpadding="0" cellspacing="0">
-        <tr><td width="5px" height="15px"></td><td colspan="3"></td></tr>
-        <tr><td></td><td class="td06"></td><td align="left">
-                &nbsp;</td>
-            <td align="right">
-                <asp:ImageButton ID="btnWrite" runat="server" 
-                    ImageUrl="~/images/btn_write.gif" 
-                    PostBackUrl="~/Board/Write.aspx"/>
-            </td></tr>
-        <tr><td height="10px"></td><td colspan="3"></td></tr>
     </table>
 </asp:Content>
 

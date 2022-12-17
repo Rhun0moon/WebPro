@@ -8,88 +8,75 @@
     <title></title>
     <asp:ContentPlaceHolder ID="head" runat="server"> </asp:ContentPlaceHolder>
     <style type="text/css">
-        .auto-style1 {
-            text-decoration: underline;
+        @font-face {
+            font-family: 'SANGJUGyeongcheonIsland';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2112@1.0/SANGJUGyeongcheonIsland.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+        body{ font-family: 'SANGJUGyeongcheonIsland'; }
+        .all-table { width: 100%; }
+        .logo{
+            height: 50px;
+            text-align: center;
             font-size: x-large;
         }
-
-        .btn {
-            -webkit-border-radius: 28;
-            -moz-border-radius: 28;
-            border-radius: 28px;
-            text-shadow: 1px 1px 3px #ffffff;
-            font-family: Arial;
-            color: #ffffff;
-            font-size: 13px;
-            padding: 7px;
-            background: #000000;
-            border: solid #000000 2px;
+        .logo-a{
             text-decoration: none;
+            color: #1e767a; 
         }
-
-            .btn:hover {
-                background: #3cb0fd;
-                background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
-                background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
-                background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
-                background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
-                background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
-                text-decoration: none;
-            }
-
-
-        .btn2 {
-            -webkit-border-radius: 28;
-            -moz-border-radius: 28;
-            border-radius: 28px;
-            text-shadow: 1px 1px 3px #ffffff;
-            font-family: Arial;
-            color: #ffffff;
-            font-size: 13px;
-            padding: 7px;
-            background: #000000;
-            border: solid #000000 2px;
-            text-decoration: none;
+        .logo-a:hover{
+            color: #005766; 
         }
-
-            .btn2:hover {
-                background: #eb0cb7;
-                text-decoration: none;
-            }
-        .auto-style3 {
-            color: #FFFFFF;
+        .header {
+            width: 50%; height: 50px;
+            text-align: center;
         }
-        .auto-style4 {
-            width: 1622px;
+        .nav{
+            width: 100%; height:100%;
+            border: none; 
+            background-color: #9ed1c7;
+            color: #1e767a; 
+            font-size: 20px;
+            font-family: 'SANGJUGyeongcheonIsland';
         }
-        .auto-style6 {
-            width: 270px;
+        .nav:hover{ 
+            color: #005766;
+            background-color: rgba(158, 209, 199, .5);
+        }
+        .footer {
+            height: 25px;
+            padding: 10px;
+            text-align: left;
+            color: #1e767a; 
+            background-color: #9ed1c7;
         }
     </style>
 </head>
 <body>
     <form id="form1" runat="server">
         <div>
-            <table class="auto-style4">
+            <table class="all-table">
                 <tr>
-                    <td height="50px" align="center" class="auto-style1" colspan="3"><strong>Time Manager<br />
-                    </strong></td>
-                </tr>
-                <tr>
-                    <td height="50px" align="center" style="background-color: #000000; color: #FFFFFF" class="auto-style6">
-                        <asp:Button ID="Button2" runat="server" Text="로그인" OnClick="Button2_Click" BackColor="#000000" BorderColor="#000000" ForeColor="#FFFFFF" Font-Size="15px" />
-                    </td>
-                    <td height="50px" align="center" style="background-color: #000000; color: #FFFFFF" class="auto-style6">
-                        <asp:Button ID="Button8" runat="server" Text="회원가입" OnClick="Button8_Click" BackColor="#000000" BorderColor="#000000" ForeColor="#FFFFFF" Font-Size="15px" />
+                    <td class="logo" colspan="2">
+                        <asp:LinkButton ID="HomeLogo" CssClass="logo-a" runat="server" PostBackUrl="~/Login.aspx">Time Manager</asp:LinkButton>
                     </td>
                 </tr>
                 <tr>
-                    <td colspan="3">
+                    <td class="header">
+                        <asp:Button ID="Login" runat="server" Text="로그인" class="nav" OnClick="Login_Click" />
+                    </td>
+                    <td class="header">
+                        <asp:Button ID="NewUser" runat="server" Text="회원가입" class="nav" OnClick="NewUser_Click" />
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
                         <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"> </asp:ContentPlaceHolder>
                     </td>
                 </tr>
                 <tr>
-                    <td height="25px" style="background-color: #000000; text-align: left;" colspan="3" class="auto-style3">2022 웹프로그래밍 및 데이터베이스 응용 - 김선희, 김주현</td>
+                    <td class="footer" colspan="2" >2022 웹프로그래밍 및 데이터베이스 응용 - 김선희, 김주현</td>
                 </tr>
             </table>
         </div>

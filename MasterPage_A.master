@@ -1,6 +1,4 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
-
-<!DOCTYPE html>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage_A.master.cs" Inherits="MasterPage_A" %>
 
 <html>
 <head runat="server">
@@ -16,7 +14,7 @@
         }
         body{ font-family: 'SANGJUGyeongcheonIsland'; }
         .all-table { width: 100%; }
-        .logo{
+        .logo {
             height: 50px;
             text-align: center;
             font-size: x-large;
@@ -29,7 +27,7 @@
             color: #005766; 
         }
         .header {
-            width: 20%; height: 50px;
+            width: 25%; height: 50px;
             text-align: center;
         }
         .nav{
@@ -58,8 +56,8 @@
         <div>
             <table class="all-table">
                 <tr>
-                    <td class="logo" colspan="5">
-                        <asp:LinkButton ID="HomeLogo" CssClass="logo-a" runat="server" PostBackUrl="~/Home.aspx">Time Manager</asp:LinkButton>
+                    <td class="logo" colspan="4">
+                        <asp:LinkButton ID="HomeLogo"  CssClass="logo-a" runat="server" PostBackUrl="~/Admin/Home.aspx">Time Manager</asp:LinkButton>
                     </td>
                 </tr>
                 <tr>
@@ -70,24 +68,21 @@
                         <asp:Button ID="Board" runat="server" Text="게시판" class="nav" OnClick="Board_Click" />
                     </td>
                     <td class="header">
-                        <asp:Button ID="Schedule" runat="server" Text="일정표" class="nav" OnClick="Schedule_Click" />
-                    </td>
-                    <td class="header">
-                        <asp:Button ID="Modify" runat="server" Text="회원정보 수정" class="nav" OnClick="Modify_Click" />
+                        <asp:Button ID="User" runat="server" Text="회원" class="nav" OnClick="User_Click" />
                     </td>
                     <td class="header">
                         <asp:Button ID="Logout" runat="server" Text="로그아웃" class="nav" OnClick="Logout_Click" />
                     </td>
                 </tr>
                 <tr>
-                    <td colspan="5">
+                    <td colspan="4">
                         <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
                             
                         </asp:ContentPlaceHolder>
                     </td>
                 </tr>
                 <tr>
-                    <td class="footer" colspan="5" >2022 웹프로그래밍 및 데이터베이스 응용 - 김선희, 김주현</td>
+                    <td class="footer" colspan="4">2022 웹프로그래밍 및 데이터베이스 응용 - 김선희, 김주현</td>
                 </tr>
             </table>
         </div>

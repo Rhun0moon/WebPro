@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="Home.aspx.cs" Inherits="Home" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage_A.master" AutoEventWireup="true" CodeFile="Home.aspx.cs" Inherits="Home" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
     <style type="text/css">
@@ -30,9 +30,12 @@
             <table style="border: medium solid #000000; width:100%;">
                 <tr>
                     <td class="auto-style7">
-                        <br /><br />
+                        <br />
+                        <br />
                         <asp:Image ID="img_Welcome" runat="server" ImageAlign="Middle" Height="500px" Width="591px" ImageUrl="~/images/asdf.jpg"/>
-                        <br /><br /><br />
+                        <br />
+                        <br />
+                        <br />
                     </td>
                     <td class="auto-style2">
                         <asp:Label ID="Label4" runat="server" Text=" "></asp:Label>

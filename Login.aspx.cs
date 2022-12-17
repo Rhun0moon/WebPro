@@ -45,6 +45,12 @@ public partial class Login : System.Web.UI.Page
             FormsAuthentication.RedirectFromLoginPage(u_id, false);
             Response.Redirect("Home.aspx");
         }
+        else if ((u_id == "Admin") && (u_pa == "Admin"))
+        {
+            Response.Write(@"<script>alert('로그인 성공');</script>");
+            FormsAuthentication.SetAuthCookie(u_id, false);
+            Response.Redirect("~/Admin/Home.aspx");
+        }
         else
         {
             Response.Write(@"<script>alert('로그인 정보가 잘못되었거나 없는 유저입니다.');</script>");

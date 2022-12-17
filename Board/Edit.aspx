@@ -1,16 +1,16 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="Edit.aspx.cs" Inherits="Board_Edit" %>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-    <table class="tbl01" cellpadding="0" cellspacing="0">
+    <table class="tbl01" cellpadding="0" cellspacing="0" width="1920px">
         <tr><td width="5px"></td><td class="td01"></td></tr>
-        <tr><td></td><td class="td03">
+        <tr><td width="100px"></td><td class="td03" width="500px">
             <img src="../images/title_icon.gif" />
             &nbsp;&nbsp;&nbsp;글 수 정</td></tr>
         <tr><td></td><td class="td01"></td></tr>
         <tr><td></td><td height="15"></td></tr>
     </table>
     <table class="tbl01" cellpadding="0" cellspacing="0">
-            <tr><td width="5px"></td><td>
+            <tr><td width="300px"></td><td>
             <table class="tbl01" cellpadding="0" cellspacing="0">
                 <tr><td colspan="2" class="td02"></td></tr>
                 <tr><td class="td05">· 작성자</td>
@@ -37,7 +37,7 @@
                     <td style="padding-left:20px; padding-top:7px" valign="top">· 내용</td>
                     <td class="p02">
                         <asp:TextBox ID="txtMessage" runat="server" Height="200px" 
-                            CssClass="p01" TextMode="MultiLine" Width="400px">
+                            CssClass="p01" TextMode="MultiLine" Width="1000px">
                         </asp:TextBox>
                     </td>
                 </tr>
@@ -49,7 +49,7 @@
     </td></tr></table>
     <table class="tbl01" cellpadding="0" cellspacing="0">
         <tr><td width="5px" height="15px"></td><td colspan="3"></td></tr>
-        <tr><td></td><td class="td06"></td><td align="left">
+        <tr><td width="800px"></td><td class="td06" width="465px"></td><td align="left">
                 <asp:ImageButton ID="btnEdit" runat="server"
                     ImageUrl="~/images/btn_edit.gif" onclick="btnEdit_Click"/>
             </td>

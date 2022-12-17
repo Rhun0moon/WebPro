@@ -12,23 +12,22 @@ public partial class Board_Delete : System.Web.UI.Page
     {
         DBConn conn = new DBConn();
         // 삭제하고자 하는 글의 참조 번호 찾기(답변이 아닌 경우 자신을 참조)
-        string selectRefId = "SELECT ref_id FROM board WHERE serial_no=" +  Request["sn"];
+        string selectRefId = "SELECT ref_id FROM board WHERE b_no=" +  Request["sn"];
         string refString = conn.ExecuteScalar(selectRefId).ToString();
 
         // 참조 번호가 같으면서 삭제되지 않은 글 수를 얻음
         string selectString = "SELECT COUNT(*) FROM board WHERE ref_id=";
         selectString += refString;
-        selectString += " AND del_flag <> 'Y'";
+        selectString += " AND b_flag <> 'Y'";
         int count = (int)conn.ExecuteScalar(selectString);
+
         // 참조 번호가 같은 삭제되지 않은 글이 있으면 del_flag 만 갱신
-        if (count > 1)
-        {
-            string updateString = "UPDATE board SET del_flag='Y' WHERE serial_no=";
+        if (count > 1){
+            string updateString = "UPDATE board SET b_flag='Y' WHERE b_no=";
             updateString += Request["sn"];
             conn.ExecuteNonQuery(updateString);
         }
-        else
-        {
+        else{
             string deleteString = "DELETE FROM board WHERE ref_id=" + refString;
             conn.ExecuteNonQuery(deleteString);
         }
