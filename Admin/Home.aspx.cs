@@ -9,6 +9,6 @@ public partial class Home : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-        Label4.Text = User.Identity.Name + " 님 환영합니다!";
+        //Label4.Text = User.Identity.Name + " 님 환영합니다!";
     }
 }
