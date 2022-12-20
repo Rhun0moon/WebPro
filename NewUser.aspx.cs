@@ -76,7 +76,7 @@ public partial class NewUser : System.Web.UI.Page
             sc.Dispose();
             scmd.Dispose();
             Response.Write(@"<script>alert('회원가입 완료');</script>");
-            Response.Redirect("Home.aspx");
+            Response.Redirect("Login.aspx");
         }
     }
 

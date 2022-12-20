@@ -25,9 +25,7 @@
             text-decoration: none;
             color: #1e767a; 
         }
-        .logo-a:hover{
-            color: #005766; 
-        }
+        .logo-a:hover{ color: #005766; }
         .header {
             /* width 크기 다름 */
             width: 20%; height: 50px;
@@ -35,10 +33,9 @@
         }
         .nav{
             width: 100%; height:100%;
-            border: none; 
-            background-color: #9ed1c7;
-            color: #000000; 
-            /* #1e767a;  */
+            border: none;
+            background-color: #fff; /* #9ed1c7; */
+            color: #000000; /* #1e767a;  */
             font-size: 20px;
             font-family: 'Tenada';
         }

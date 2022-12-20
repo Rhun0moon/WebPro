@@ -95,186 +95,55 @@ public partial class TeamProject_MainWindow : System.Web.UI.Page
                 string place = rd2["s_place"].ToString();
                 // 화면 출력
                 // 월요일
-                if (mon1.ID == coord)
-                {
-                    mon1.Text = place;
-                }
-                else if (mon2.ID == coord)
-                {
-                    mon2.Text = place;
-                }
-                else if (mon3.ID == coord)
-                {
-                    mon3.Text = place;
-                }
-                else if (mon4.ID == coord)
-                {
-                    mon4.Text = place;
-                }
-                else if (mon5.ID == coord)
-                {
-                    mon5.Text = place;
-                }
-                else if (mon6.ID == coord)
-                {
-                    mon6.Text = place;
-                }
-                else if (mon7.ID == coord)
-                {
-                    mon7.Text = place;
-                }
-                else if (mon8.ID == coord)
-                {
-                    mon8.Text = place;
-                }
-                else if (mon9.ID == coord)
-                {
-                    mon9.Text = place;
-                }
-                else if (tue1.ID == coord)     //화요일
-                {
-                    tue1.Text = place;
-                }
-                else if (tue2.ID == coord)
-                {
-                    tue2.Text = place;
-                }
-                else if (tue3.ID == coord)
-                {
-                    tue3.Text = place;
-                }
-                else if (tue4.ID == coord)
-                {
-                    tue4.Text = place;
-                }
-                else if (tue5.ID == coord)
-                {
-                    tue5.Text = place;
-                }
-                else if (tue6.ID == coord)
-                {
-                    tue6.Text = place;
-                }
-                else if (tue7.ID == coord)
-                {
-                    tue7.Text = place;
-                }
-                else if (tue8.ID == coord)
-                {
-                    tue8.Text = place;
-                }
-                else if (tue9.ID == coord)
-                {
-                    tue9.Text = place;
-                }
-                else if (wed1.ID == coord)     //수요일
-                {
-                    wed1.Text = place;
-                }
-                else if (wed2.ID == coord)
-                {
-                    wed2.Text = place;
-                }
-                else if (wed3.ID == coord)
-                {
-                    wed3.Text = place;
-                }
-                else if (wed4.ID == coord)
-                {
-                    wed4.Text = place;
-                }
-                else if (wed5.ID == coord)
-                {
-                    wed5.Text = place;
-                }
-                else if (wed6.ID == coord)
-                {
-                    wed6.Text = place;
-                }
-                else if (wed7.ID == coord)
-                {
-                    wed7.Text = place;
-                }
-                else if (wed8.ID == coord)
-                {
-                    wed8.Text = place;
-                }
-                else if (wed9.ID == coord)
-                {
-                    wed9.Text = place;
-                }
-                else if (thu1.ID == coord)     //목요일
-                {
-                    thu1.Text = place;
-                }
-                else if (thu2.ID == coord)
-                {
-                    thu2.Text = place;
-                }
-                else if (thu3.ID == coord)
-                {
-                    thu3.Text = place;
-                }
-                else if (thu4.ID == coord)
-                {
-                    thu4.Text = place;
-                }
-                else if (thu5.ID == coord)
-                {
-                    thu5.Text = place;
-                }
-                else if (thu6.ID == coord)
-                {
-                    thu6.Text = place;
-                }
-                else if (thu7.ID == coord)
-                {
-                    thu7.Text = place;
-                }
-                else if (thu8.ID == coord)
-                {
-                    thu8.Text = place;
-                }
-                else if (thu9.ID == coord)
-                {
-                    thu9.Text = place;
-                }
-                else if (fri1.ID == coord)     //금요일
-                {
-                    fri1.Text = place;
-                }
-                else if (fri2.ID == coord)
-                {
-                    fri2.Text = place;
-                }
-                else if (fri3.ID == coord)
-                {
-                    fri3.Text = place;
-                }
-                else if (fri4.ID == coord)
-                {
-                    fri4.Text = place;
-                }
-                else if (fri5.ID == coord)
-                {
-                    fri5.Text = place;
-                }
-                else if (fri6.ID == coord)
-                {
-                    fri6.Text = place;
-                }
-                else if (fri7.ID == coord)
-                {
-                    fri7.Text = place;
-                }
-                else if (fri8.ID == coord)
-                {
-                    fri8.Text = place;
-                }
-                else if (fri9.ID == coord)
-                {
-                    fri9.Text = place;
-                }
+                if (mon1.ID == coord) { mon1.Text = place; }
+                else if (mon2.ID == coord) { mon2.Text = place; }
+                else if (mon3.ID == coord) { mon3.Text = place; }
+                else if (mon4.ID == coord) { mon4.Text = place; }
+                else if (mon5.ID == coord) { mon5.Text = place; }
+                else if (mon6.ID == coord) { mon6.Text = place; }
+                else if (mon7.ID == coord) { mon7.Text = place; }
+                else if (mon8.ID == coord) { mon8.Text = place; }
+                else if (mon9.ID == coord) { mon9.Text = place; }
+                //화요일
+                else if (tue1.ID == coord) { tue1.Text = place; }
+                else if (tue2.ID == coord) { tue2.Text = place; }
+                else if (tue3.ID == coord) { tue3.Text = place; }
+                else if (tue4.ID == coord) { tue4.Text = place; }
+                else if (tue5.ID == coord) { tue5.Text = place; }
+                else if (tue6.ID == coord) { tue6.Text = place; }
+                else if (tue7.ID == coord) { tue7.Text = place; }
+                else if (tue8.ID == coord) { tue8.Text = place; }
+                else if (tue9.ID == coord) { tue9.Text = place; }
+                //수요일
+                else if (wed1.ID == coord) { wed1.Text = place; }
+                else if (wed2.ID == coord) { wed2.Text = place; }
+                else if (wed3.ID == coord) { wed3.Text = place; }
+                else if (wed4.ID == coord) { wed4.Text = place; }
+                else if (wed5.ID == coord) { wed5.Text = place; }
+                else if (wed6.ID == coord) { wed6.Text = place; }
+                else if (wed7.ID == coord) { wed7.Text = place; }
+                else if (wed8.ID == coord) { wed8.Text = place; }
+                else if (wed9.ID == coord) { wed9.Text = place; }
+                //목요일
+                else if (thu1.ID == coord) { thu1.Text = place; }
+                else if (thu2.ID == coord) { thu2.Text = place; }
+                else if (thu3.ID == coord) { thu3.Text = place; }
+                else if (thu4.ID == coord) { thu4.Text = place; }
+                else if (thu5.ID == coord) { thu5.Text = place; }
+                else if (thu6.ID == coord) { thu6.Text = place; }
+                else if (thu7.ID == coord) { thu7.Text = place; }
+                else if (thu8.ID == coord) { thu8.Text = place; }
+                else if (thu9.ID == coord) { thu9.Text = place; }
+                //금요일
+                else if (fri1.ID == coord) { fri1.Text = place; }
+                else if (fri2.ID == coord) { fri2.Text = place; }
+                else if (fri3.ID == coord) { fri3.Text = place; }
+                else if (fri4.ID == coord) { fri4.Text = place; }
+                else if (fri5.ID == coord) { fri5.Text = place; }
+                else if (fri6.ID == coord) { fri6.Text = place; }
+                else if (fri7.ID == coord) { fri7.Text = place; }
+                else if (fri8.ID == coord) { fri8.Text = place; }
+                else if (fri9.ID == coord) { fri9.Text = place; }
             }
             rd2.Close();
 
@@ -317,186 +186,56 @@ public partial class TeamProject_MainWindow : System.Web.UI.Page
 
         // 화면 출력
         // 월요일
-        if (mon1.ID == coord)
-        {
-            mon1.Text = txtPlace.Text;
-        }
-        else if (mon2.ID == coord)
-        {
-            mon2.Text = txtPlace.Text;
-        }
-        else if (mon3.ID == coord)
-        {
-            mon3.Text = txtPlace.Text;
-        }
-        else if (mon4.ID == coord)
-        {
-            mon4.Text = txtPlace.Text;
-        }
-        else if (mon5.ID == coord)
-        {
-            mon5.Text = txtPlace.Text;
-        }
-        else if (mon6.ID == coord)
-        {
-            mon6.Text = txtPlace.Text;
-        }
-        else if (mon7.ID == coord)
-        {
-            mon7.Text = txtPlace.Text;
-        }
-        else if (mon8.ID == coord)
-        {
-            mon8.Text = txtPlace.Text;
-        }
-        else if (mon9.ID == coord)
-        {
-            mon9.Text = txtPlace.Text;
-        }
-        else if (tue1.ID == coord)     //화요일
-        {
-            tue1.Text = txtPlace.Text;
-        }
-        else if (tue2.ID == coord)
-        {
-            tue2.Text = txtPlace.Text;
-        }
-        else if (tue3.ID == coord)
-        {
-            tue3.Text = txtPlace.Text;
-        }
-        else if (tue4.ID == coord)
-        {
-            tue4.Text = txtPlace.Text;
-        }
-        else if (tue5.ID == coord)
-        {
-            tue5.Text = txtPlace.Text;
-        }
-        else if (tue6.ID == coord)
-        {
-            tue6.Text = txtPlace.Text;
-        }
-        else if (tue7.ID == coord)
-        {
-            tue7.Text = txtPlace.Text;
-        }
-        else if (tue8.ID == coord)
-        {
-            tue8.Text = txtPlace.Text;
-        }
-        else if (tue9.ID == coord)
-        {
-            tue9.Text = txtPlace.Text;
-        }
-        else if (wed1.ID == coord)     //수요일
-        {
-            wed1.Text = txtPlace.Text;
-        }
-        else if (wed2.ID == coord)
-        {
-            wed2.Text = txtPlace.Text;
-        }
-        else if (wed3.ID == coord)
-        {
-            wed3.Text = txtPlace.Text;
-        }
-        else if (wed4.ID == coord)
-        {
-            wed4.Text = txtPlace.Text;
-        }
-        else if (wed5.ID == coord)
-        {
-            wed5.Text = txtPlace.Text;
-        }
-        else if (wed6.ID == coord)
-        {
-            wed6.Text = txtPlace.Text;
-        }
-        else if (wed7.ID == coord)
-        {
-            wed7.Text = txtPlace.Text;
-        }
-        else if (wed8.ID == coord)
-        {
-            wed8.Text = txtPlace.Text;
-        }
-        else if (wed9.ID == coord)
-        {
-            wed9.Text = txtPlace.Text;
-        }
-        else if (thu1.ID == coord)     //목요일
-        {
-            thu1.Text = txtPlace.Text;
-        }
-        else if (thu2.ID == coord)
-        {
-            thu2.Text = txtPlace.Text;
-        }
-        else if (thu3.ID == coord)
-        {
-            thu3.Text = txtPlace.Text;
-        }
-        else if (thu4.ID == coord)
-        {
-            thu4.Text = txtPlace.Text;
-        }
-        else if (thu5.ID == coord)
-        {
-            thu5.Text = txtPlace.Text;
-        }
-        else if (thu6.ID == coord)
-        {
-            thu6.Text = txtPlace.Text;
-        }
-        else if (thu7.ID == coord)
-        {
-            thu7.Text = txtPlace.Text;
-        }
-        else if (thu8.ID == coord)
-        {
-            thu8.Text = txtPlace.Text;
-        }
-        else if (thu9.ID == coord)
-        {
-            thu9.Text = txtPlace.Text;
-        }
-        else if (fri1.ID == coord)     //금요일
-        {
-            fri1.Text = txtPlace.Text;
-        }
-        else if (fri2.ID == coord)
-        {
-            fri2.Text = txtPlace.Text;
-        }
-        else if (fri3.ID == coord)
-        {
-            fri3.Text = txtPlace.Text;
-        }
-        else if (fri4.ID == coord)
-        {
-            fri4.Text = txtPlace.Text;
-        }
-        else if (fri5.ID == coord)
-        {
-            fri5.Text = txtPlace.Text;
-        }
-        else if (fri6.ID == coord)
-        {
-            fri6.Text = txtPlace.Text;
-        }
-        else if (fri7.ID == coord)
-        {
-            fri7.Text = txtPlace.Text;
-        }
-        else if (fri8.ID == coord)
-        {
-            fri8.Text = txtPlace.Text;
-        }
-        else if (fri9.ID == coord)
-        {
-            fri9.Text = txtPlace.Text;
-        }
+        if (mon1.ID == coord) { mon1.Text = txtPlace.Text; }
+        else if (mon2.ID == coord) { mon2.Text = txtPlace.Text; }
+        else if (mon3.ID == coord) { mon3.Text = txtPlace.Text; }
+        else if (mon4.ID == coord) { mon4.Text = txtPlace.Text; }
+        else if (mon5.ID == coord) { mon5.Text = txtPlace.Text; }
+        else if (mon6.ID == coord) { mon6.Text = txtPlace.Text; }
+        else if (mon7.ID == coord) { mon7.Text = txtPlace.Text; }
+        else if (mon8.ID == coord) { mon8.Text = txtPlace.Text; }
+        else if (mon9.ID == coord) { mon9.Text = txtPlace.Text; }
+        //화요일
+        else if (tue1.ID == coord) { tue1.Text = txtPlace.Text; }
+        else if (tue2.ID == coord) { tue2.Text = txtPlace.Text; }
+        else if (tue3.ID == coord) { tue3.Text = txtPlace.Text; }
+        else if (tue4.ID == coord) { tue4.Text = txtPlace.Text; }
+        else if (tue5.ID == coord) { tue5.Text = txtPlace.Text; }
+        else if (tue6.ID == coord) { tue6.Text = txtPlace.Text; }
+        else if (tue7.ID == coord) { tue7.Text = txtPlace.Text; }
+        else if (tue8.ID == coord) { tue8.Text = txtPlace.Text; }
+        else if (tue9.ID == coord) { tue9.Text = txtPlace.Text; }
+        //수요일
+        else if (wed1.ID == coord) { wed1.Text = txtPlace.Text; }
+        else if (wed2.ID == coord) { wed2.Text = txtPlace.Text; }
+        else if (wed3.ID == coord) { wed3.Text = txtPlace.Text; }
+        else if (wed4.ID == coord) { wed4.Text = txtPlace.Text; }
+        else if (wed5.ID == coord) { wed5.Text = txtPlace.Text; }
+        else if (wed6.ID == coord) { wed6.Text = txtPlace.Text; }
+        else if (wed7.ID == coord) { wed7.Text = txtPlace.Text; }
+        else if (wed8.ID == coord) { wed8.Text = txtPlace.Text; }
+        else if (wed9.ID == coord) { wed9.Text = txtPlace.Text; }
+        //목요일
+        else if (thu1.ID == coord) { thu1.Text = txtPlace.Text; }
+        else if (thu2.ID == coord) { thu2.Text = txtPlace.Text; }
+        else if (thu3.ID == coord) { thu3.Text = txtPlace.Text; }
+        else if (thu4.ID == coord) { thu4.Text = txtPlace.Text; }
+        else if (thu5.ID == coord) { thu5.Text = txtPlace.Text; }
+        else if (thu6.ID == coord) { thu6.Text = txtPlace.Text; }
+        else if (thu7.ID == coord) { thu7.Text = txtPlace.Text; }
+        else if (thu8.ID == coord) { thu8.Text = txtPlace.Text; }
+        else if (thu9.ID == coord) { thu9.Text = txtPlace.Text; }
+        //금요일
+        else if (fri1.ID == coord) { fri1.Text = txtPlace.Text; }
+        else if (fri2.ID == coord) { fri2.Text = txtPlace.Text; }
+        else if (fri3.ID == coord) { fri3.Text = txtPlace.Text; }
+        else if (fri4.ID == coord) { fri4.Text = txtPlace.Text; }
+        else if (fri5.ID == coord) { fri5.Text = txtPlace.Text; }
+        else if (fri6.ID == coord) { fri6.Text = txtPlace.Text; }
+        else if (fri7.ID == coord) { fri7.Text = txtPlace.Text; }
+        else if (fri8.ID == coord) { fri8.Text = txtPlace.Text; }
+        else if (fri9.ID == coord) { fri9.Text = txtPlace.Text; }
+
         scmd.Parameters.Add(sql_sid);
         scmd.Parameters.Add(sql_splace);
         scmd.Parameters.Add(sql_sday);
@@ -534,186 +273,55 @@ public partial class TeamProject_MainWindow : System.Web.UI.Page
 
         // 화면 출력
         // 월요일
-        if (mon1.ID == coord)
-        {
-            mon1.Text = "";
-        }
-        else if (mon2.ID == coord)
-        {
-            mon2.Text = "";
-        }
-        else if (mon3.ID == coord)
-        {
-            mon3.Text = "";
-        }
-        else if (mon4.ID == coord)
-        {
-            mon4.Text = "";
-        }
-        else if (mon5.ID == coord)
-        {
-            mon5.Text = "";
-        }
-        else if (mon6.ID == coord)
-        {
-            mon6.Text = "";
-        }
-        else if (mon7.ID == coord)
-        {
-            mon7.Text = "";
-        }
-        else if (mon8.ID == coord)
-        {
-            mon8.Text = "";
-        }
-        else if (mon9.ID == coord)
-        {
-            mon9.Text = "";
-        }
-        else if (tue1.ID == coord)     //화요일
-        {
-            tue1.Text = "";
-        }
-        else if (tue2.ID == coord)
-        {
-            tue2.Text = "";
-        }
-        else if (tue3.ID == coord)
-        {
-            tue3.Text = "";
-        }
-        else if (tue4.ID == coord)
-        {
-            tue4.Text = "";
-        }
-        else if (tue5.ID == coord)
-        {
-            tue5.Text = "";
-        }
-        else if (tue6.ID == coord)
-        {
-            tue6.Text = "";
-        }
-        else if (tue7.ID == coord)
-        {
-            tue7.Text = "";
-        }
-        else if (tue8.ID == coord)
-        {
-            tue8.Text = "";
-        }
-        else if (tue9.ID == coord)
-        {
-            tue9.Text = "";
-        }
-        else if (wed1.ID == coord)     //수요일
-        {
-            wed1.Text = "";
-        }
-        else if (wed2.ID == coord)
-        {
-            wed2.Text = "";
-        }
-        else if (wed3.ID == coord)
-        {
-            wed3.Text = "";
-        }
-        else if (wed4.ID == coord)
-        {
-            wed4.Text = "";
-        }
-        else if (wed5.ID == coord)
-        {
-            wed5.Text = "";
-        }
-        else if (wed6.ID == coord)
-        {
-            wed6.Text = "";
-        }
-        else if (wed7.ID == coord)
-        {
-            wed7.Text = "";
-        }
-        else if (wed8.ID == coord)
-        {
-            wed8.Text = "";
-        }
-        else if (wed9.ID == coord)
-        {
-            wed9.Text = "";
-        }
-        else if (thu1.ID == coord)     //목요일
-        {
-            thu1.Text = "";
-        }
-        else if (thu2.ID == coord)
-        {
-            thu2.Text = "";
-        }
-        else if (thu3.ID == coord)
-        {
-            thu3.Text = "";
-        }
-        else if (thu4.ID == coord)
-        {
-            thu4.Text = "";
-        }
-        else if (thu5.ID == coord)
-        {
-            thu5.Text = "";
-        }
-        else if (thu6.ID == coord)
-        {
-            thu6.Text = "";
-        }
-        else if (thu7.ID == coord)
-        {
-            thu7.Text = "";
-        }
-        else if (thu8.ID == coord)
-        {
-            thu8.Text = "";
-        }
-        else if (thu9.ID == coord)
-        {
-            thu9.Text = "";
-        }
-        else if (fri1.ID == coord)     //금요일
-        {
-            fri1.Text = "";
-        }
-        else if (fri2.ID == coord)
-        {
-            fri2.Text = "";
-        }
-        else if (fri3.ID == coord)
-        {
-            fri3.Text = "";
-        }
-        else if (fri4.ID == coord)
-        {
-            fri4.Text = "";
-        }
-        else if (fri5.ID == coord)
-        {
-            fri5.Text = "";
-        }
-        else if (fri6.ID == coord)
-        {
-            fri6.Text = "";
-        }
-        else if (fri7.ID == coord)
-        {
-            fri7.Text = "";
-        }
-        else if (fri8.ID == coord)
-        {
-            fri8.Text = "";
-        }
-        else if (fri9.ID == coord)
-        {
-            fri9.Text = "";
-        }
+        if (mon1.ID == coord) { mon1.Text = ""; }
+        else if (mon2.ID == coord) { mon2.Text = ""; }
+        else if (mon3.ID == coord) { mon3.Text = ""; }
+        else if (mon4.ID == coord) { mon4.Text = ""; }
+        else if (mon5.ID == coord) { mon5.Text = ""; }
+        else if (mon6.ID == coord) { mon6.Text = ""; }
+        else if (mon7.ID == coord) { mon7.Text = ""; }
+        else if (mon8.ID == coord) { mon8.Text = ""; }
+        else if (mon9.ID == coord) { mon9.Text = ""; }
+        //화요일
+        else if (tue1.ID == coord) { tue1.Text = ""; }
+        else if (tue2.ID == coord) { tue2.Text = ""; }
+        else if (tue3.ID == coord) { tue3.Text = ""; }
+        else if (tue4.ID == coord) { tue4.Text = ""; }
+        else if (tue5.ID == coord) { tue5.Text = ""; }
+        else if (tue6.ID == coord) { tue6.Text = ""; }
+        else if (tue7.ID == coord) { tue7.Text = ""; }
+        else if (tue8.ID == coord) { tue8.Text = ""; }
+        else if (tue9.ID == coord) { tue9.Text = ""; }
+        //수요일
+        else if (wed1.ID == coord) { wed1.Text = ""; }
+        else if (wed2.ID == coord) { wed2.Text = ""; }
+        else if (wed3.ID == coord) { wed3.Text = ""; }
+        else if (wed4.ID == coord) { wed4.Text = ""; }
+        else if (wed5.ID == coord) { wed5.Text = ""; }
+        else if (wed6.ID == coord) { wed6.Text = ""; }
+        else if (wed7.ID == coord) { wed7.Text = ""; }
+        else if (wed8.ID == coord) { wed8.Text = ""; }
+        else if (wed9.ID == coord) { wed9.Text = ""; }
+        //목요일
+        else if (thu1.ID == coord) { thu1.Text = ""; }
+        else if (thu2.ID == coord) { thu2.Text = ""; }
+        else if (thu3.ID == coord) { thu3.Text = ""; }
+        else if (thu4.ID == coord) { thu4.Text = ""; }
+        else if (thu5.ID == coord) { thu5.Text = ""; }
+        else if (thu6.ID == coord) { thu6.Text = ""; }
+        else if (thu7.ID == coord) { thu7.Text = ""; }
+        else if (thu8.ID == coord) { thu8.Text = ""; }
+        else if (thu9.ID == coord) { thu9.Text = ""; }
+        //금요일
+        else if (fri1.ID == coord) { fri1.Text = ""; }
+        else if (fri2.ID == coord) { fri2.Text = ""; }
+        else if (fri3.ID == coord) { fri3.Text = ""; }
+        else if (fri4.ID == coord) { fri4.Text = ""; }
+        else if (fri5.ID == coord) { fri5.Text = ""; }
+        else if (fri6.ID == coord) { fri6.Text = ""; }
+        else if (fri7.ID == coord) { fri7.Text = ""; }
+        else if (fri8.ID == coord) { fri8.Text = ""; }
+        else if (fri9.ID == coord) { fri9.Text = ""; }
 
         SqlParameter sql_sid = new SqlParameter("@s_id", SqlDbType.VarChar, 50);
         sql_sid.Value = sch_id;

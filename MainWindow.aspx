@@ -8,6 +8,10 @@
             font-weight: normal;
             font-style: normal;
         }
+        .all-content{
+            width: 100%; height:100%;
+            border-top: medium solid #9ed1c7;
+        }
         .auto-style_MP, .auto-style0_MP, .auto-style1_MP, .auto-style2_MP{
             text-align: center;
             border-collapse : collapse;
@@ -45,12 +49,13 @@
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-    <div>
+    <div class="all-content">
         <table>
+            <tr><td colspan="2" style="height: 40px;"> </td> </tr>
             <tr>
                 <!-- 일정표 -->
                 <td rowspan="5" style="width: 65%;">
-                    <div style="text-align:center; margin: 10px">
+                    <div style="text-align:center; margin: 20px 10px">
                         <span style="font-size: 30px">일정표</span> <br />
                     </div>
                     <div>

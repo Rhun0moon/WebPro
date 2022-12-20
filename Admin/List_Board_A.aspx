@@ -62,18 +62,15 @@
                             등록된 게시물이 없습니다.
                         </EmptyDataTemplate>
                         <Columns>
-                            <asp:BoundField DataField="b_no" HeaderText="b_no" InsertVisible="False" ReadOnly="True" SortExpression="b_no">
-                            </asp:BoundField>
-                            <asp:BoundField DataField="b_id" HeaderText="b_id" SortExpression="b_id">
-                            </asp:BoundField>
-                            <asp:BoundField DataField="b_title" HeaderText="b_title" SortExpression="b_title">
-                            </asp:BoundField>
-                            <asp:BoundField DataField="ref_id" HeaderText="ref_id" SortExpression="ref_id" />
-                            <asp:BoundField DataField="ref_no" HeaderText="ref_no" SortExpression="ref_no" />
-                            <asp:BoundField DataField="ref_depth" HeaderText="ref_depth" SortExpression="ref_depth" />
-                            <asp:BoundField DataField="b_read" HeaderText="b_read" SortExpression="b_read" />
-                            <asp:BoundField DataField="b_flag" HeaderText="b_flag" SortExpression="b_flag" />
-                            <asp:BoundField DataField="b_regdate" HeaderText="b_regdate" SortExpression="b_regdate" />
+                            <asp:BoundField DataField="b_no" HeaderText="번호" InsertVisible="False" ReadOnly="True" SortExpression="b_no"/>
+                            <asp:BoundField DataField="b_id" HeaderText="아이디" SortExpression="b_id"/>
+                            <asp:BoundField DataField="b_title" HeaderText="제목" SortExpression="b_title"/>
+                            <asp:BoundField DataField="ref_id" HeaderText="참조 번호" SortExpression="ref_id" />
+                            <asp:BoundField DataField="ref_no" HeaderText="내부 순서" SortExpression="ref_no" />
+                            <asp:BoundField DataField="ref_depth" HeaderText="들여쓰기 깊이" SortExpression="ref_depth" />
+                            <asp:BoundField DataField="b_read" HeaderText="조회수" SortExpression="b_read" />
+                            <asp:BoundField DataField="b_flag" HeaderText="삭제여부" SortExpression="b_flag" />
+                            <asp:BoundField DataField="b_regdate" HeaderText="등록일자" SortExpression="b_regdate" />
                         </Columns>
                     </asp:GridView>
                 </td>

@@ -31,7 +31,6 @@ public partial class Board_Delete : System.Web.UI.Page
             string deleteString = "DELETE FROM board WHERE ref_id=" + refString;
             conn.ExecuteNonQuery(deleteString);
         }
-
         conn.Close();
         Response.Redirect("~/Board/List.aspx");
     }

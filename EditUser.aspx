@@ -12,6 +12,7 @@
             width: 100%; height:100%; 
             display: flex; 
             justify-content:center; 
+            border-top: medium solid #9ed1c7;
             background-color: #fff;
         }
         .login-content{
